@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Test Calc</title>
+</head>
+<body>
+<form action="submit">
+  <label for="container_size">Size of container</label>
+  <input type="number" name="container_size" id="container_size" value="9"><br>
+  <label for="tap_temp">Temperature at the tap</label>
+  <input type="number" name="tap_temp" id="tap_temp" value="17"><br>
+  <label for="heated_temp">Temperature of added hot water</label>
+  <input type="number" name="heated_temp" id="heated_temp" value="98"><br>
+  <label for="aquarium_temp">Temperature of aquarium</label>
+  <input type="number" name="aquarium_temp" id="aquarium_temp" value="23"><br>
+  
+  </form>
+  <button type="submit" name="submit" id="submit">Submit</button>
+  <p id="tap_output"></p>
+  <p id="hot_output"></p>
+
+  <script src="assets/scripts/water_change_calc.js"></script>
+</body>
+</html>
