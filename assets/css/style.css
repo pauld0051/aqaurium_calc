@@ -1,3 +1,23 @@
 .row-color {
     color: #557c79;
 }
+
+.bucket-color {
+    color: #ff6347;
+    font-size: 1.5rem; 
+}
+
+.cold-color {
+    color: #b1d1fc;
+    font-size: 1.5rem; 
+}
+
+.hot-color {
+    color: #bd1816;
+    font-size: 1.5rem;
+}
+
+.fish-color {
+    color: #fc6000;
+    font-size: 1.5rem;
+}

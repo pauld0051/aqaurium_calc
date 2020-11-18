@@ -24,7 +24,7 @@
     <tr>
       <th scope="col">Condition</th>
       <th scope="col">Input</th>
-      <th scope="col">Icon</th>
+      <th scope="col"></th>
     </tr>
   </thead>
 <tbody>
@@ -40,7 +40,7 @@
                 </a>
       </td>
       <td><input type="number" name="container_size" id="container_size" value="10"></td>
-      <td><i class="fas fa-glass-whiskey"></i></td>
+      <td><span class="bucket-color"><i class="fas fa-glass-whiskey"></i></span></td>
     </tr>
     <tr>
       <th scope="row" class="row-color"><label for="tap_temp">Temperature at the tap</label><a tabindex="0" 
@@ -54,7 +54,7 @@
                 </a>
       </th>
       <td><input type="number" name="tap_temp" id="tap_temp" value="13"></td>
-      <td><i class="fas fa-shower"></i></td>
+      <td><span class="cold-color"><i class="fas fa-shower"></i></span></td>
     </tr>
     <tr>
       <th scope="row" class="row-color"><label for="heated_temp">Temperature of added hot water</label><a tabindex="0" 
@@ -68,7 +68,7 @@
                 </a>
       </th>
       <td><input type="number" name="heated_temp" id="heated_temp" value="98"></td>
-      <td><i class="fas fa-hot-tub"></i></td>
+      <td><span class="hot-color"><i class="fas fa-hot-tub"></i></span></td>
     </tr>
     <tr>
       <th scope="row" class="row-color"><label for="aquarium_temp">Temperature of aquarium</label><a tabindex="0" 
@@ -82,7 +82,7 @@
                 </a>
       </th>
       <td><input type="number" name="aquarium_temp" id="aquarium_temp" value="23"></td>
-      <td><i class="fas fa-fish"></i></td>
+      <td><span class="fish-color"><i class="fas fa-fish"></i></span></td>
     </tr>
   </tbody>
 </table> 
@@ -95,7 +95,7 @@
     <tr>
       <th scope="col">Condition</th>
       <th scope="col">Output</th>
-      <th scope="col">Icon</th>
+      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
@@ -112,7 +112,7 @@
       </td>
       <td id="tap_output">
       </td>
-      <td><i class="fas fa-shower"></i></td>
+      <td><span class="cold-color"><i class="fas fa-shower"></i></span></td>
     </tr>
     <tr>
       <th scope="row" class="row-color">Hot water <a tabindex="0" 
@@ -127,7 +127,7 @@
       </td>
       <td id="hot_output">
       </td>
-      <td><i class="fas fa-hot-tub"></i></td>
+      <td><span class="hot-color"><i class="fas fa-hot-tub"></i></span></td>
     </tr>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
