@@ -12,6 +12,10 @@ let m_1 = m_t - m_2
 console.log("amount of cold water = " + m_1)
 console.log("amount of hot water = " + m_2)
 
-document.getElementById("tap_output").innerHTML = m_1.toFixed(2) + " L";
-document.getElementById("hot_output").innerHTML = m_2.toFixed(2) + " L";
+document.getElementById("tap_output").innerHTML = m_1.toFixed(2);
+document.getElementById("hot_output").innerHTML = m_2.toFixed(2);
 }
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})

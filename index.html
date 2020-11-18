@@ -29,22 +29,58 @@
   </thead>
 <tbody>
     <tr>
-      <th scope="row" class="row-color"><label for="container_size">Size of container</label></td>
+      <th scope="row" class="row-color"><label for="container_size">Size of container</label><a tabindex="0" 
+                class="btn btn-link" 
+                role="button" 
+                data-toggle="popover" 
+                data-trigger="focus" 
+                title="Container Size - any unit"
+                data-content="Enter the size of your container, units do not matter">
+                  <i class="far fa-question-circle"></i>
+                </a>
+      </td>
       <td><input type="number" name="container_size" id="container_size" value="10"></td>
       <td><i class="fas fa-glass-whiskey"></i></td>
     </tr>
     <tr>
-      <th scope="row" class="row-color"><label for="tap_temp">Temperature at the tap</label></th>
+      <th scope="row" class="row-color"><label for="tap_temp">Temperature at the tap</label><a tabindex="0" 
+                class="btn btn-link" 
+                role="button" 
+                data-toggle="popover" 
+                data-trigger="focus" 
+                title="Tap water temperature (cold)"
+                data-content="Enter the initial temperature of your cold water tap, units do not matter">
+                  <i class="far fa-question-circle"></i>
+                </a>
+      </th>
       <td><input type="number" name="tap_temp" id="tap_temp" value="13"></td>
       <td><i class="fas fa-shower"></i></td>
     </tr>
     <tr>
-      <th scope="row" class="row-color"><label for="heated_temp">Temperature of added hot water</label></th>
+      <th scope="row" class="row-color"><label for="heated_temp">Temperature of added hot water</label><a tabindex="0" 
+                class="btn btn-link" 
+                role="button" 
+                data-toggle="popover" 
+                data-trigger="focus" 
+                title="How water temperature that you're adding"
+                data-content="Enter the temperature of the hot water that you're mixing with the cold, units do not matter">
+                  <i class="far fa-question-circle"></i>
+                </a>
+      </th>
       <td><input type="number" name="heated_temp" id="heated_temp" value="98"></td>
       <td><i class="fas fa-hot-tub"></i></td>
     </tr>
     <tr>
-      <th scope="row" class="row-color"><label for="aquarium_temp">Temperature of aquarium</label></th>
+      <th scope="row" class="row-color"><label for="aquarium_temp">Temperature of aquarium</label><a tabindex="0" 
+                class="btn btn-link" 
+                role="button" 
+                data-toggle="popover" 
+                data-trigger="focus" 
+                title="Aquarium temperature"
+                data-content="Enter the temperature of your aquarium, units do not matter">
+                  <i class="far fa-question-circle"></i>
+                </a>
+      </th>
       <td><input type="number" name="aquarium_temp" id="aquarium_temp" value="23"></td>
       <td><i class="fas fa-fish"></i></td>
     </tr>
@@ -64,13 +100,33 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row" class="row-color">Cold tap water</td>
-      <td id="tap_output"></td>
+      <th scope="row" class="row-color">Cold tap water <a tabindex="0" 
+                class="btn btn-link" 
+                role="button" 
+                data-toggle="popover" 
+                data-trigger="focus" 
+                title="Amount of cold water needed"
+                data-content="Fill your bucket with this much cold water at the temperature you specified, use the same units that you inputted for the size of the container and temperature">
+                  <i class="far fa-question-circle"></i>
+                </a>
+      </td>
+      <td id="tap_output">
+      </td>
       <td><i class="fas fa-shower"></i></td>
     </tr>
     <tr>
-      <th scope="row" class="row-color">Hot water</td>
-      <td id="hot_output"></td>
+      <th scope="row" class="row-color">Hot water <a tabindex="0" 
+                class="btn btn-link" 
+                role="button" 
+                data-toggle="popover" 
+                data-trigger="focus" 
+                title="Amount of cold water needed"
+                data-content="Fill your bucket with this much hot water at the temperature you specified, use the same units that you inputted for the size of the container and temperature">
+                  <i class="far fa-question-circle"></i>
+                </a>
+      </td>
+      <td id="hot_output">
+      </td>
       <td><i class="fas fa-hot-tub"></i></td>
     </tr>
   </div>
