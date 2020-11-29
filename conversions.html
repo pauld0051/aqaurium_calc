@@ -32,13 +32,61 @@
     </div>
     <div class="w-100"><!--spacer--></div>
 </nav>
+<div class="container">
+<form action="submit">
+<table class="table table-striped table-fixed">
+  <thead>
+    <tr>
+      <th scope="col">Units</th>
+      <th scope="col">Input</th>
+      <th scope="col">Conversion</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+<tbody>
+    <tr>
+      <th scope="row" class="row-color"><label for="deg_celsius">°C</label><a tabindex="0" 
+                class="btn btn-link" 
+                role="button" 
+                data-toggle="popover" 
+                data-trigger="focus" 
+                title="Temperature in °C"
+                data-content="Enter the temperature you want to convert in °C or click below to convert °F to °C">
+                  <i class="far fa-question-circle"></i>
+                </a>
+      </td>
+      <td><input type="number" name="deg_celsius" id="deg_celsius" value="23"></td>
+      <td><span id="deg_celsius_conv"></span></td>
+      <td><span class="bucket-color"><i class="fas fa-thermometer-three-quarters"></i></span></td>
+    </tr>
+    <tr>
+      <th scope="row" class="row-color"><label for="deg_fahrenheit">°F</label><a tabindex="0" 
+                class="btn btn-link" 
+                role="button" 
+                data-toggle="popover" 
+                data-trigger="focus" 
+                title="Temperature in °F"
+                data-content="Enter the temperature you want to convert in °F or click above to convert °C to °F">
+                  <i class="far fa-question-circle"></i>
+                </a>
+      </th>
+      <td><input type="number" name="deg_fahrenheit" id="deg_fahrenheit" value="73"></td>
+      <td><span id="deg_fahrenheit_conv"></span></td>
+      <td><span class="cold-color"><i class="fas fa-thermometer-three-quarters"></i></span></td>
+    </tr>
+  </tbody>
+</table> 
+  </form>
+  <button class="btn btn-success" type="submit" name="submit" id="submit">Submit</button>
+<br>
+  </div>
 
-<span>Currently Under Construction - Expect temperature and volume conversions.</span>
 
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>  
   <script src="assets/scripts/convert.js"></script>
+  <script src="assets/scripts/universal.js"></script>
 </body>
 </html>
 

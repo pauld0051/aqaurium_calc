@@ -9,13 +9,6 @@ let m_t = parseFloat(document.getElementById("container_size").value);
 let m_2 = (m_t * (T_f - T_1)) / (T_2 - T_1)
 let m_1 = m_t - m_2
 
-console.log("amount of cold water = " + m_1)
-console.log("amount of hot water = " + m_2)
-
 document.getElementById("tap_output").innerHTML = m_1.toFixed(2);
 document.getElementById("hot_output").innerHTML = m_2.toFixed(2);
 }
-
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
