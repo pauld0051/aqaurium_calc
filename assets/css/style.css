@@ -37,3 +37,13 @@
     font-weight: 600;
     font-size: 18px;
 }
+
+/* Table Inputs */
+input[type=number] {
+   width: 40%;
+} 
+
+/* Table Responsive */
+.table-responsive {
+    overflow-x :auto !important;
+}
