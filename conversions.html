@@ -1,93 +1,105 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
-  <!--Fontawesome-->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-  <!--Favicon-->
-  <link rel="icon" href="fish.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-  <title>Handy Dandy Conversions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <!--Favicon-->
+    <link rel="icon" href="fish.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <title>Handy Dandy Conversions</title>
 </head>
+
 <body>
-<nav class="navbar navbar-expand-sm navbar-light bg-light flex-nowrap">
-<a class="navbar-brand" href="index.html"><img src="fish.ico" alt="Fishy fishy fishy"> AquaHelp</a>
-    <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbar">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light flex-nowrap">
+        <a class="navbar-brand" href="index.html"><img src="fish.ico" alt="Fishy fishy fishy"> AquaHelp</a>
+        <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbar">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="navbar-collapse collapse w-100 justify-content-center" id="navbar">
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="conversions.html">Conversions  <span class="sr-only">(current)</span></a></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-        </ul>
+        <div class="navbar-collapse collapse w-100 justify-content-center" id="navbar">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="conversions.html">Conversions  <span class="sr-only">(current)</span></a></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w-100">
+            <!--spacer-->
+        </div>
+    </nav>
+    <div class="container">
+        <form action="submit">
+            <span class="table_heading">Table 1: Convert °C to °F</span>
+            <table class="table table-fixed">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Units</th>
+                        <th scope="col">Input</th>
+                        <th scope="col">Conversion</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="row-color"><label for="deg_celsius">°C</label>
+                            <a tabindex="0" class="btn btn-link" role="button" data-toggle="popover" data-trigger="focus" title="Temperature in °C" data-content="Enter the temperature you want to convert in °C or click below to convert °F to °C">
+                                <i class="far fa-question-circle"></i>
+                            </a>
+                            </td>
+                            <td><input type="number" name="deg_celsius" id="deg_celsius" value="23"></td>
+                            <td><span id="deg_celsius_conv"></span></td>
+                            <td><span class="bucket-color"><i class="fas fa-thermometer-three-quarters"></i></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <button class="btn btn-success" type="submit" name="submit" id="submit_C">Submit</button>
+        <br>
+        <br>
+        <form action="submit">
+            <span class="table_heading">Table 2: Convert °F to °C</span>
+            <table class="table table-fixed">
+                <thead class="thead-light">
+                    <th scope="col">Units</th>
+                    <th scope="col">Input</th>
+                    <th scope="col">Conversion</th>
+                    <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="row-color"><label for="deg_fahrenheit">°F</label>
+                            <a tabindex="0" class="btn btn-link" role="button" data-toggle="popover" data-trigger="focus" title="Temperature in °F" data-content="Enter the temperature you want to convert in °F or click above to convert °C to °F">
+                                <i class="far fa-question-circle"></i>
+                            </a>
+                        </th>
+                        <td><input type="number" name="deg_fahrenheit" id="deg_fahrenheit" value="73"></td>
+                        <td><span id="deg_fahrenheit_conv"></span></td>
+                        <td><span class="cold-color"><i class="fas fa-thermometer-three-quarters"></i></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <button class="btn btn-success" type="submit" name="submit" id="submit_F">Submit</button>
+        <br>
     </div>
-    <div class="w-100"><!--spacer--></div>
-</nav>
-<div class="container">
-<form action="submit">
-<table class="table table-striped table-fixed">
-  <thead>
-    <tr>
-      <th scope="col">Units</th>
-      <th scope="col">Input</th>
-      <th scope="col">Conversion</th>
-      <th scope="col"></th>
-    </tr>
-  </thead>
-<tbody>
-    <tr>
-      <th scope="row" class="row-color"><label for="deg_celsius">°C</label><a tabindex="0" 
-                class="btn btn-link" 
-                role="button" 
-                data-toggle="popover" 
-                data-trigger="focus" 
-                title="Temperature in °C"
-                data-content="Enter the temperature you want to convert in °C or click below to convert °F to °C">
-                  <i class="far fa-question-circle"></i>
-                </a>
-      </td>
-      <td><input type="number" name="deg_celsius" id="deg_celsius" value="23"></td>
-      <td><span id="deg_celsius_conv"></span></td>
-      <td><span class="bucket-color"><i class="fas fa-thermometer-three-quarters"></i></span></td>
-    </tr>
-    <tr>
-      <th scope="row" class="row-color"><label for="deg_fahrenheit">°F</label><a tabindex="0" 
-                class="btn btn-link" 
-                role="button" 
-                data-toggle="popover" 
-                data-trigger="focus" 
-                title="Temperature in °F"
-                data-content="Enter the temperature you want to convert in °F or click above to convert °C to °F">
-                  <i class="far fa-question-circle"></i>
-                </a>
-      </th>
-      <td><input type="number" name="deg_fahrenheit" id="deg_fahrenheit" value="73"></td>
-      <td><span id="deg_fahrenheit_conv"></span></td>
-      <td><span class="cold-color"><i class="fas fa-thermometer-three-quarters"></i></span></td>
-    </tr>
-  </tbody>
-</table> 
-  </form>
-  <button class="btn btn-success" type="submit" name="submit" id="submit">Submit</button>
-<br>
-  </div>
 
 
- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>  
-  <script src="assets/scripts/convert.js"></script>
-  <script src="assets/scripts/universal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <script src="assets/scripts/convert.js"></script>
+    <script src="assets/scripts/universal.js"></script>
 </body>
-</html>
 
+</html>
   
