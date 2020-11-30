@@ -47,3 +47,20 @@ input[type=number] {
 .table-responsive {
     overflow-x :auto !important;
 }
+
+/* Remove number spinners Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove number spinners Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Button sizes */
+.btn {
+    width: 185px;
+}
