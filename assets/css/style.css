@@ -61,6 +61,6 @@ input[type=number] {
 }
 
 /* Button sizes */
-.btn {
+.btn_width {
     width: 185px;
 }
