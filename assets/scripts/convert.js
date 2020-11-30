@@ -21,7 +21,7 @@ function calculate_g () {
     let L_in_G = parseFloat(document.getElementById("litres").value);
 
     let L_convert_G = L_in_G / 3.785;
-    document.getElementById("litres_conv").innerHTML = L_convert_G.toFixed(2) + " Gal (US liquid gallon)";
+    document.getElementById("litres_conv").innerHTML = L_convert_G.toFixed(2) + " Gal (US liquid gallons)";
 }
 
 document.getElementById("submit_G").addEventListener("click", calculate_l);
