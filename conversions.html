@@ -42,16 +42,16 @@
             <table class="table table-fixed">
                 <thead class="thead-light">
                     <tr>
-                        <th scope="col">Units</th>
-                        <th scope="col">Input</th>
-                        <th scope="col">Conversion</th>
-                        <th scope="col"></th>
+                       <th style="width: 25%" scope="col">Units</th>
+                        <th style="width: 25%" scope="col">Input</th>
+                        <th style="width: 25%" scope="col">Conversion</th>
+                        <th style="width: 25%" scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <th scope="row" class="row-color"><label for="deg_celsius">°C</label>
-                            <a tabindex="0" class="btn btn-link" role="button" data-toggle="popover" data-trigger="focus" title="Temperature in °C" data-content="Enter the temperature you want to convert in °C or click below to convert °F to °C">
+                            <a tabindex="0" class="btn btn-link" role="button" data-toggle="popover" data-trigger="focus" title="Temperature in °C" data-content="Enter the temperature you want to convert in °C or click below in Table 2 to convert °F to °C">
                                 <i class="far fa-question-circle"></i>
                             </a>
                             </td>
@@ -63,34 +63,95 @@
             </table>
         </form>
         </div>
-        <button class="btn btn-success" type="submit" name="submit" id="submit_C">Submit</button>
+        <button class="btn btn-success" type="submit" name="submit_C" id="submit_C">Submit</button>
         <br>
         <br>
         <form action="submit">
             <span class="table_heading">Table 2: Convert °F to °C</span>
             <table class="table table-fixed">
                 <thead class="thead-light">
-                    <th scope="col">Units</th>
-                    <th scope="col">Input</th>
-                    <th scope="col">Conversion</th>
-                    <th scope="col"></th>
+                    <th style="width: 25%" scope="col">Units</th>
+                        <th style="width: 25%" scope="col">Input</th>
+                        <th style="width: 25%" scope="col">Conversion</th>
+                        <th style="width: 25%" scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <th scope="row" class="row-color"><label for="deg_fahrenheit">°F</label>
-                            <a tabindex="0" class="btn btn-link" role="button" data-toggle="popover" data-trigger="focus" title="Temperature in °F" data-content="Enter the temperature you want to convert in °F or click above to convert °C to °F">
+                            <a tabindex="0" class="btn btn-link" role="button" data-toggle="popover" data-trigger="focus" title="Temperature in °F" data-content="Enter the temperature you want to convert in °F or click above in Table 1 to convert °C to °F">
                                 <i class="far fa-question-circle"></i>
                             </a>
                         </th>
                         <td><input type="number" name="deg_fahrenheit" id="deg_fahrenheit" value="73"></td>
                         <td><span id="deg_fahrenheit_conv"></span></td>
-                        <td><span class="cold-color"><i class="fas fa-thermometer-three-quarters"></i></span></td>
+                        <td><span class="cold-color"><i class="fas fa-thermometer-half"></i></span></td>
                     </tr>
                 </tbody>
             </table>
         </form>
-        <button class="btn btn-success" type="submit" name="submit" id="submit_F">Submit</button>
+        <button class="btn btn-success" type="submit" name="submit_F" id="submit_F">Submit</button>
+        <br>
+        <br>
+        <form action="submit">
+            <span class="table_heading">Table 3: Convert L to Gal (US Liquid Gallons)</span>
+            <div class="table-responsive">
+            <table class="table table-fixed">
+                <thead class="thead-light">
+                    <tr>
+                        <th style="width: 25%" scope="col">Units</th>
+                        <th style="width: 25%" scope="col">Input</th>
+                        <th style="width: 25%" scope="col">Conversion</th>
+                        <th style="width: 25%" scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="row-color"><label for="litres">Litres</label>
+                            <a tabindex="0" class="btn btn-link" role="button" data-toggle="popover" data-trigger="focus" title="Litres to Gallons" data-content="Enter the volume you want to convert in L or click below in Table 4 to convert US Liquid Gallons to L">
+                                <i class="far fa-question-circle"></i>
+                            </a>
+                            </td>
+                            <td><input type="number" name="litres" id="litres" value="200"></td>
+                            <td><span id="litres_conv"></span></td>
+                            <td><span class="water-color"><i class="fas fa-water"></i></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        </div>
+        <button class="btn btn-success" type="submit" name="submit_L" id="submit_L">Submit</button>
+        <br>
+        <br>
+     <form action="submit">
+            <span class="table_heading">Table 4: Convert Gal (US Liquid Gallons) to L</span>
+            <div class="table-responsive">
+            <table class="table table-fixed">
+                <thead class="thead-light">
+                    <tr>
+                        <th style="width: 25%" scope="col">Units</th>
+                        <th style="width: 25%" scope="col">Input</th>
+                        <th style="width: 25%" scope="col">Conversion</th>
+                        <th style="width: 25%" scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="row-color"><label for="gallons">US Liquid Gallons</label>
+                            <a tabindex="0" class="btn btn-link" role="button" data-toggle="popover" data-trigger="focus" title="Gallons to Litres" data-content="Enter the volume you want to convert in US Liquid Gallons or click above in Table 3 to convert L to US Liquid Gallons">
+                                <i class="far fa-question-circle"></i>
+                            </a>
+                            </td>
+                            <td><input type="number" name="gallons" id="gallons" value="53"></td>
+                            <td><span id="gallons_conv"></span></td>
+                            <td><span class="water-color"><i class="fas fa-water"></i></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        </div>
+        <button class="btn btn-success" type="submit" name="submit_G" id="submit_G">Submit</button>
+        <br>
         <br>
     </div>
 
