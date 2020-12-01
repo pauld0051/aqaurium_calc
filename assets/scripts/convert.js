@@ -1,6 +1,6 @@
 // Convert temperatures
 
-document.getElementById("submit_C").addEventListener("click", calculate_c);
+document.getElementById("deg_celsius").addEventListener("keyup", calculate_c);
 function calculate_c () {
     let T_in_C = parseFloat(document.getElementById("deg_celsius").value);
 
@@ -8,7 +8,7 @@ function calculate_c () {
     document.getElementById("deg_celsius_conv").innerHTML = T_convert_C.toFixed(2) + " °F";
 }
 
-document.getElementById("submit_F").addEventListener("click", calculate_f);
+document.getElementById("deg_fahrenheit").addEventListener("keyup", calculate_f);
 function calculate_f () {
     let T_in_F = parseFloat(document.getElementById("deg_fahrenheit").value);
 
@@ -16,7 +16,9 @@ function calculate_f () {
     document.getElementById("deg_fahrenheit_conv").innerHTML = T_convert_F.toFixed(2) + " °C";
 }
 
-document.getElementById("submit_L").addEventListener("click", calculate_g);
+// Convert volumes
+
+document.getElementById("litres").addEventListener("keyup", calculate_g);
 function calculate_g () {
     let L_in_G = parseFloat(document.getElementById("litres").value);
 
@@ -24,7 +26,7 @@ function calculate_g () {
     document.getElementById("litres_conv").innerHTML = L_convert_G.toFixed(2) + " Gal (US liquid gallons)";
 }
 
-document.getElementById("submit_G").addEventListener("click", calculate_l);
+document.getElementById("gallons").addEventListener("keyup", calculate_l);
 function calculate_l () {
     let G_in_L = parseFloat(document.getElementById("gallons").value);
 
