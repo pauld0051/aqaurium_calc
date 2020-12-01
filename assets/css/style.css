@@ -1,3 +1,25 @@
+
+/* Full Background */
+body {
+    background-color: #f2f2f2;
+}
+
+.bg-nav {
+    background-color: #ffffe9;
+}
+
+/* Table Card */
+.bg-white {
+    background-color: #fff;
+    border-radius: 5%;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    padding-top: 37px;
+    padding-bottom: 37px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* icon Colours */
 .row-color {
     color: #557c79;
 }
