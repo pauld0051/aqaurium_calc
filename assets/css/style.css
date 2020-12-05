@@ -62,8 +62,13 @@ body {
 
 /* Table Inputs */
 input[type=number] {
-   width: 75%;
-} 
+   min-width: 75%;
+}
+
+@media only screen and (max-width: 600px) {
+    #deg_celsius, #deg_fahrenheit, #litres, #gallons  {width: 67px;}
+    
+}
 
 /* Table Responsive */
 .table-responsive {
