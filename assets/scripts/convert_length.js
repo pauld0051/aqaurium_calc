@@ -1,17 +1,14 @@
 // Get length unit one
 
-
-
 document.getElementById("submit").addEventListener("click", convert_length);
-function convert_length () {
+function convert_length() {
     let unit_one = document.getElementById("unit_one").value;
     let unit_two = document.getElementById("unit_two").value;
     let unit_one_val = parseFloat(document.getElementById("unit_one_val").value);
-        
+
     let result;
-    if (unit_one === "mm" && unit_two === "mm") {
+    if (unit_one === "mm" && unit_two === "mm")
         result = unit_one_val;
-    }
     if (unit_one === "mm" && unit_two === "cm")
         result = unit_one_val / 10;
     if (unit_one === "mm" && unit_two === "m")
@@ -37,7 +34,7 @@ function convert_length () {
     if (unit_one === "m" && unit_two === "m")
         result = unit_one_val;
     if (unit_one === "m" && unit_two === "in")
-        result = unit_one_val *  39.37;
+        result = unit_one_val * 39.37;
     if (unit_one === "m" && unit_two === "yd")
         result = unit_one_val * 1.094;
     if (unit_one === "in" && unit_two === "mm")
@@ -61,5 +58,5 @@ function convert_length () {
     if (unit_one === "yd" && unit_two === "yd")
         result = unit_one_val;
 
-document.getElementById("unit_two_val").innerHTML = result.toFixed(2) + " " + unit_two;
+    document.getElementById("unit_two_val").innerHTML = result.toFixed(2) + " " + unit_two;
 }
