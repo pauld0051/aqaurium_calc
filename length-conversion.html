@@ -31,8 +31,9 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conversions</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="conversions.html">Temperature and Volume</a>
-          <a class="dropdown-item" href="length-conversion.html">Length Conversion <span class="sr-only">(current)</span></a>
+                            <a class="dropdown-item" href="conversions.html">Temperature and Volume</a>
+                            <a class="dropdown-item" href="length-conversion.html">Length Conversion <span
+                                    class="sr-only">(current)</span></a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -45,9 +46,10 @@
 
     <div class="container bg-white">
         <form action="submit">
+            <span class="table_heading">Table 1: Convert units of length</span>
             <div class="table-responsive">
-                <table class="table table-striped table-fixed">
-                    <thead>
+                <table class="table table-fixed">
+                    <thead class="thead-light">
                         <tr>
                             <th style="width: 25%" scope="col">Units</th>
                             <th style="width: 25%" scope="col">Length</th>
@@ -57,41 +59,48 @@
                     </thead>
                     <tr>
                         <td>
-<div class="form-group">
-    <label for="unit_one">Select Units</label>
-    <select class="form-control" id="unit_one">
-      <option>mm</option>
-      <option>cm</option>
-      <option>m</option>
-      <option>in</option>
-      <option>yd</option>
-    </select>
-  </div>
-</td>
-<div class="form-group">
-<td><label for="unit_one_val">Enter Value to convert</label>
-    <input type="number" name="unit_one_val" id="unit_one_val" placeholder="enter value"></td>
-</div>
-                       <td>
-<div class="form-group">
-    <label for="unit_two">Select Units</label>
-    <select class="form-control" id="unit_two">
-      <option>mm</option>
-      <option>cm</option>
-      <option>m</option>
-      <option selected="selected">in</option>
-      <option>yd</option>
-    </select>
-  </div>
-</td>
-<div class="form-group">
-<td><label for="unit_two_val">Converted</label>
-    <input type="number" name="unit_two_val" id="unit_two_val" placeholder="enter value"></td>
-</div>
+                            <div class="form-group">
+                                <label for="unit_one">Select Units</label>
+                                <select class="form-control" id="unit_one">
+                                    <option>mm</option>
+                                    <option>cm</option>
+                                    <option>m</option>
+                                    <option>in</option>
+                                    <option>yd</option>
+                                </select>
+                            </div>
+                        </td>
+                        <div class="form-group">
+                            <td><label for="unit_one_val">Enter Value to convert</label>
+                                <input type="number" name="unit_one_val" id="unit_one_val" placeholder="enter value">
+                            </td>
+                        </div>
+                        <td>
+                            <div class="form-group">
+                                <label for="unit_two">Select Units</label>
+                                <select class="form-control" id="unit_two">
+                                    <option>mm</option>
+                                    <option>cm</option>
+                                    <option>m</option>
+                                    <option selected="selected">in</option>
+                                    <option>yd</option>
+                                </select>
+                            </div>
+                        </td>
+                        <div class="form-group">
+                            <td><label for="unit_two_val">Converted</label>
+                                 <p id="unit_two_val"></p>
+                            </td>
+
+                        </div>
                     </tr>
                 </table>
             </div>
         </form>
+        <hr>
+        <div class="text-center"><button class="btn btn_width btn-success" type="submit" name="submit"
+                id="submit">Calculate Length <i class="fas fa-fish ml-3"></i></button></div>
+        <hr>
     </div>
 
     <!-- Footer -->

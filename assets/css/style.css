@@ -98,3 +98,9 @@ input[type=number] {
 .btn_width {
     width: 185px;
 }
+
+/* white space on length conversion table */
+#unit_two_val {
+   min-width: 75%;
+    background-color: #fff;
+}

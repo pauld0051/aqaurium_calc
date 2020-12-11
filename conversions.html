@@ -16,21 +16,25 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-nav mb-2">
-            <a class="navbar-brand" href="index.html"><img class="img-fluid" src="assets/images/fish-1.png" alt="Fishy fishy fishy"> AquaHelp</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+            <a class="navbar-brand" href="index.html"><img class="img-fluid" src="assets/images/fish-1.png"
+                    alt="Fishy fishy fishy"> AquaHelp</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item active dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conversions</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="conversions.html">Temperature and Volume <span class="sr-only">(current)</span></a>
-          <a class="dropdown-item" href="length-conversion.html">Length Conversion</a>
-        </div>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conversions</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="conversions.html">Temperature and Volume <span
+                                    class="sr-only">(current)</span></a>
+                            <a class="dropdown-item" href="length-conversion.html">Length Conversion</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="gallery.html">Gallery</a>
@@ -41,75 +45,83 @@
     </header>
     <div class="container bg-white">
         <div class="container">
-        <form action="submit">
-            <span class="table_heading table-heading-color">Table 1: Convert °C to °F</span>
-            <div class="table-responsive">
-            <table class="table table-fixed">
-                <thead class="thead-light">
-                    <tr>
-                      <th style="width: 15%" scope="col">Units</th>
-                       <th style="width: 10%" scope="col">Help</th>
-                        <th style="width: 25%" scope="col">Input (°F)</th>
-                        <th style="width: 30%" scope="col">Conversion (°C)</th>
-                        <th style="width: 20%" scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row" class="row-color"><label for="deg_celsius">°C</label>
-                            <td><a tabindex="0" class="btn btn-link" role="button" data-toggle="popover" data-trigger="focus" title="Temperature in °C" data-content="Enter the temperature you want to convert in °C or click below in Table 2 to convert °F to °C">
-                                <i class="far fa-question-circle"></i>
-                            </a></td>
-                            </td>
-                            <td><input type="number" name="deg_celsius" id="deg_celsius" placeholder="eg 23"></td>
-                            <td><span id="deg_celsius_conv"></span></td>
-                            <td class="d-none d-md-block"><div class="text-left"><span class="bucket-color"><i class="fas fa-thermometer-three-quarters"></i></div></span></td>
-                    </tr>
-                </tbody>
-            </table>
-        </form>
+            <form action="submit">
+                <span class="table_heading table-heading-color">Table 1: Convert °C to °F</span>
+                <div class="table-responsive">
+                    <table class="table table-fixed">
+                        <thead class="thead-light">
+                            <tr>
+                                <th style="width: 15%" scope="col">Units</th>
+                                <th style="width: 10%" scope="col">Help</th>
+                                <th style="width: 25%" scope="col">Input (°F)</th>
+                                <th style="width: 30%" scope="col">Conversion (°C)</th>
+                                <th style="width: 20%" scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="row-color"><label for="deg_celsius">°C</label>
+                                <td><a tabindex="0" class="btn btn-link" role="button" data-toggle="popover"
+                                        data-trigger="focus" title="Temperature in °C"
+                                        data-content="Enter the temperature you want to convert in °C or click below in Table 2 to convert °F to °C">
+                                        <i class="far fa-question-circle"></i>
+                                    </a></td>
+                                </td>
+                                <td><input type="number" name="deg_celsius" id="deg_celsius" placeholder="eg 23"></td>
+                                <td><span id="deg_celsius_conv"></span></td>
+                                <td class="d-none d-md-block">
+                                    <div class="text-left"><span class="bucket-color"><i
+                                                class="fas fa-thermometer-three-quarters"></i></div></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </form>
         </div>
-        
+
         <hr>
         <br>
         <form action="submit">
             <span class="table_heading">Table 2: Convert °F to °C</span>
             <div class="table-responsive">
-            <table class="table table-fixed">
-                <thead class="thead-light">
-                    <th style="width: 15%" scope="col">Units</th>
-                       <th style="width: 10%" scope="col">Help</th>
+                <table class="table table-fixed">
+                    <thead class="thead-light">
+                        <th style="width: 15%" scope="col">Units</th>
+                        <th style="width: 10%" scope="col">Help</th>
                         <th style="width: 25%" scope="col">Input (°F)</th>
                         <th style="width: 30%" scope="col">Conversion (°C)</th>
                         <th style="width: 20%" scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row" class="row-color"><label for="deg_fahrenheit">°F</label>
-                            <td><a tabindex="0" class="btn btn-link text-left" role="button" data-toggle="popover" data-trigger="focus" title="Temperature in °F" data-content="Enter the temperature you want to convert in °F or click above in Table 1 to convert °C to °F">
-                                <i class="far fa-question-circle"></i>
-                            </a></td>
-                        </th>
-                        <td><input type="number" name="deg_fahrenheit" id="deg_fahrenheit" placeholder="eg 73"></td>
-                        <td><span id="deg_fahrenheit_conv"></span></td>
-                        <td class="d-none d-md-block"><span class="cold-color"><i class="fas fa-thermometer-half"></i></span></td>
-                    </tr>
-                </tbody>
-            </table>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="row-color"><label for="deg_fahrenheit">°F</label>
+                            <td><a tabindex="0" class="btn btn-link text-left" role="button" data-toggle="popover"
+                                    data-trigger="focus" title="Temperature in °F"
+                                    data-content="Enter the temperature you want to convert in °F or click above in Table 1 to convert °C to °F">
+                                    <i class="far fa-question-circle"></i>
+                                </a></td>
+                            </th>
+                            <td><input type="number" name="deg_fahrenheit" id="deg_fahrenheit" placeholder="eg 73"></td>
+                            <td><span id="deg_fahrenheit_conv"></span></td>
+                            <td class="d-none d-md-block"><span class="cold-color"><i
+                                        class="fas fa-thermometer-half"></i></span></td>
+                        </tr>
+                    </tbody>
+                </table>
         </form>
-        </div>
-        
-        <hr>
-        <br>
-        <form action="submit">
-            <span class="table_heading">Table 3: Convert L to Gal (US Liquid Gallons)</span>
-            <div class="table-responsive">
+    </div>
+
+    <hr>
+    <br>
+    <form action="submit">
+        <span class="table_heading">Table 3: Convert L to Gal (US Liquid Gallons)</span>
+        <div class="table-responsive">
             <table class="table table-fixed">
                 <thead class="thead-light">
                     <tr>
                         <th style="width: 15%" scope="col">Units</th>
-                       <th style="width: 10%" scope="col">Help</th>
+                        <th style="width: 10%" scope="col">Help</th>
                         <th style="width: 25%" scope="col">Input (L)</th>
                         <th style="width: 30%" scope="col">Conversion (Gal)</th>
                         <th style="width: 20%" scope="col"></th>
@@ -118,30 +130,32 @@
                 <tbody>
                     <tr>
                         <th scope="row" class="row-color"><label for="litres">Litres</label>
-                            <td><a tabindex="0" class="btn btn-link text-left" role="button" data-toggle="popover" data-trigger="focus" title="Litres to Gallons" data-content="Enter the volume you want to convert in L or click below in Table 4 to convert US Liquid Gallons to L">
+                        <td><a tabindex="0" class="btn btn-link text-left" role="button" data-toggle="popover"
+                                data-trigger="focus" title="Litres to Gallons"
+                                data-content="Enter the volume you want to convert in L or click below in Table 4 to convert US Liquid Gallons to L">
                                 <i class="far fa-question-circle"></i>
                             </a></td>
-                            </td>
-                            <td><input type="number" name="litres" id="litres" placeholder="eg 200"></td>
-                            <td><span id="litres_conv"></span></td>
-                            <td class="d-none d-md-block"><span class="water-color"><i class="fas fa-water"></i></span></td>
+                        </td>
+                        <td><input type="number" name="litres" id="litres" placeholder="eg 200"></td>
+                        <td><span id="litres_conv"></span></td>
+                        <td class="d-none d-md-block"><span class="water-color"><i class="fas fa-water"></i></span></td>
                     </tr>
                 </tbody>
             </table>
-        </form>
-        </div>
-        
-        <hr>
-        
-        <br>
-     <form action="submit">
-            <span class="table_heading">Table 4: Convert Gal (US Liquid Gallons) to L</span>
-            <div class="table-responsive">
+    </form>
+    </div>
+
+    <hr>
+
+    <br>
+    <form action="submit">
+        <span class="table_heading">Table 4: Convert Gal (US Liquid Gallons) to L</span>
+        <div class="table-responsive">
             <table class="table table-fixed">
                 <thead class="thead-light">
                     <tr>
                         <th style="width: 15%" scope="col">Units</th>
-                       <th style="width: 10%" scope="col">Help</th>
+                        <th style="width: 10%" scope="col">Help</th>
                         <th style="width: 25%" scope="col">Input (Gal)</th>
                         <th style="width: 30%" scope="col">Conversion (L)</th>
                         <th style="width: 20%" scope="col"></th>
@@ -150,42 +164,45 @@
                 <tbody>
                     <tr>
                         <th scope="row" class="row-color"><label for="gallons">Gallons</label>
-                            <td><a tabindex="0" class="btn btn-link text-left" role="button" data-toggle="popover" data-trigger="focus" title="Gallons to Litres" data-content="Enter the volume you want to convert in US Liquid Gallons or click above in Table 3 to convert L to US Liquid Gallons">
+                        <td><a tabindex="0" class="btn btn-link text-left" role="button" data-toggle="popover"
+                                data-trigger="focus" title="Gallons to Litres"
+                                data-content="Enter the volume you want to convert in US Liquid Gallons or click above in Table 3 to convert L to US Liquid Gallons">
                                 <i class="far fa-question-circle"></i>
                             </a></td>
-                            </td>
-                            <td><input type="number" name="gallons" id="gallons" placeholder="eg 53"></td>
-                            <td><span id="gallons_conv"></span></td>
-                            <td class="d-none d-md-block"><span class="water-color-2"><i class="fas fa-water"></i></span></td>
+                        </td>
+                        <td><input type="number" name="gallons" id="gallons" placeholder="eg 53"></td>
+                        <td><span id="gallons_conv"></span></td>
+                        <td class="d-none d-md-block"><span class="water-color-2"><i class="fas fa-water"></i></span>
+                        </td>
                     </tr>
                 </tbody>
             </table>
-        </form>
-        </div>
-       
-        <hr>
-       </div>
+    </form>
     </div>
 
-       <!-- Footer -->
-<footer class="page-footer font-small blue">
-<div class="col-md-12 py-5">
-          <div class="mb-5 text-center">
+    <hr>
+    </div>
+    </div>
 
-            <!-- Facebook -->
-            <a class="fb-icon" href="https://www.facebook.com/AquaHelp-103318208320861" target="_blank">
-              <i class="fab fa-facebook-f fa-lg mr-md-5 mr-3 fa-2x"></i>
-            </a>
-          </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+        <div class="col-md-12 py-5">
+            <div class="mb-5 text-center">
+
+                <!-- Facebook -->
+                <a class="fb-icon" href="https://www.facebook.com/AquaHelp-103318208320861" target="_blank">
+                    <i class="fab fa-facebook-f fa-lg mr-md-5 mr-3 fa-2x"></i>
+                </a>
+            </div>
         </div>
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://pauld0051.github.io/aqaurium_calc/"> AquaHelp - Paul Davis</a>
-  </div>
-  <!-- Copyright -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://pauld0051.github.io/aqaurium_calc/"> AquaHelp - Paul Davis</a>
+        </div>
+        <!-- Copyright -->
 
-</footer>
-<!-- Footer -->
+    </footer>
+    <!-- Footer -->
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -196,4 +213,3 @@
 </body>
 
 </html>
-  
