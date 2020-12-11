@@ -73,8 +73,14 @@ input[type=number] {
     #container_size,
     #tap_temp,
     #heated_temp,
-    #aquarium_temp    
+    #aquarium_temp,
+    #unit_one_val
       {width: 57.5px;}    
+}
+
+#unit_one, 
+#unit_two {
+    width: 50%;
 }
 
 /* Table Responsive */
