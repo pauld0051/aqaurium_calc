@@ -104,3 +104,8 @@ input[type=number] {
 .btn_width {
     width: 185px;
 }
+
+/* maximum container size for smaller tables */
+.cont-size {
+    max-width: 75%;
+}
